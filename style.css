@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Product Sans";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(237, 237, 252); */
+}
+
+#nav {
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav>h2 {
+    font-family: "Monument";
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+
+#nav #lnav {
+    display: flex;
+    align-items: center;
+}
+
+#nav #rnav {
+    display: flex;
+    align-items: center;
+}
+
+#nav #rnav i {
+    margin-left: 20px;
+}
+
+#nav #rnav a:nth-child(2) {
+    margin-right: 50px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(63, 63, 63);
+    margin-left: 20px;
+}
+
+#left {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+#left img {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    height: 130%;
+}
+
+#left #productdesc {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    width: 45%;
+    height: 450px;
+    /* background-color: rgb(236, 228, 228); */
+}
+
+#productdesc h1 {
+    font-family: "Gilroy";
+    font-weight: 900;
+    font-size: 80px;
+}
+
+#productdesc p {
+    font-size: 15px;
+    line-height: 27px;
+    opacity: .7;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.elem {
+    width: 40%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.clrd {
+    color: rgb(0, 0, 0);
+}
+
+.scndh5 {
+    color: rgb(196, 196, 196);
+}
+
+.elmrw1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elem .bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    background-color: rgb(232, 238, 243);
+}
+
+.bar .prg {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(168, 185, 190);
+}
+
+#right {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: #e7e8f3;
+}
+
+#rightcard {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    padding: 15px;
+    width: 60%;
+    height: 300px;
+    background-color: #d4e6f0;
+}
+
+#rightcard img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+}
+
+#right>h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 45%;
+    opacity: .2;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+}
+
+#rightprg {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#prgbrrgt {
+    width: 100px;
+    height: 2px;
+    margin: 0 15px;
+    background-color: #abbdc7;
+}
+
+#prgrgt {
+    width: 50%;
+    height: 100%;
+    background-color: #1d4357;
+}
+
+#rightbtm {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-image: url(https://images.unsplash.com/photo-1627637819794-fba32f82be16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#childrgtbtm {
+    position: absolute;
+    left: -40px;
+    width: 65px;
+    height: 100%;
+    background-color: #333;
+}
+
+.rgtchldelem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+}
+
+.rgtchldelem:nth-child(1) {
+    background-color: grey;
+}
